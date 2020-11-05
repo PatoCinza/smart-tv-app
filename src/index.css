@@ -5,16 +5,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   background-color: #0f0f0f;
   color: #f1f1f1;
+  height: 720px;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding-top: 20px;
 }
 
 .poster-wrapper {
   display: inline-block;
+  height: 390px;
   text-align: center;
+  vertical-align: bottom;
   width: 310px;
 }
 
-.poster-wrapper--active {
-  outline: 1px solid #f1f1f1;
+.poster-wrapper figure {
+  position: relative;
+}
+
+.poster-wrapper img {
+  height: 321px;
+  width: 225px;
+}
+
+.poster-wrapper--active img{
+  height: 381px;
+  width: 285px;
+}
+
+.poster-wrapper span {
+  background-color: rgba(0,0,0,0.7);
+  bottom: 0;
+  display: none;
+  font-size: 20px;
+  left: 0;
+  min-height: 15%;
+  padding: 15px 10px;
+  position: absolute;
+  right: 0;
+}
+
+.poster-wrapper--active span {
+  display: inline;
 }
