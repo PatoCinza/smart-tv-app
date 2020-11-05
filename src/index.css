@@ -5,9 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0f0f0f;
+  color: #f1f1f1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.poster-wrapper {
+  display: inline-block;
+  text-align: center;
+  width: 310px;
+}
+
+.poster-wrapper--active {
+  outline: 1px solid #f1f1f1;
 }
